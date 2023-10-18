@@ -1,4 +1,6 @@
 import { AnimationType } from "../Animation"
+import { Armarouge } from '../../models/colyseus-models/pokemon';
+
 
 export enum Pkm {
   EGG = "Egg",
@@ -577,7 +579,8 @@ export enum Pkm {
   SUNFLORA = "sunflora",
   MARACTUS = "maractus",
   MINUN = "minun",
-  PLUSLE = "plusle"
+  PLUSLE = "plusle",
+  ARMAROUGE = "armarouge"
 }
 
 export const PkmIndex: { [key in Pkm]: string } = {
@@ -1157,7 +1160,8 @@ export const PkmIndex: { [key in Pkm]: string } = {
   [Pkm.SUNFLORA]: "0192",
   [Pkm.MARACTUS]: "0556",
   [Pkm.PLUSLE]: "0311",
-  [Pkm.MINUN]: "0312"
+  [Pkm.MINUN]: "0312",
+  [Pkm.ARMAROUGE]: "0936"
 }
 
 export const PkmFamily: { [key in Pkm]: Pkm } = {
@@ -1737,7 +1741,8 @@ export const PkmFamily: { [key in Pkm]: Pkm } = {
   [Pkm.SUNFLORA]: Pkm.SUNKERN,
   [Pkm.MARACTUS]: Pkm.MARACTUS,
   [Pkm.PLUSLE]: Pkm.PLUSLE,
-  [Pkm.MINUN]: Pkm.MINUN
+  [Pkm.MINUN]: Pkm.MINUN,
+  [Pkm.ARMAROUGE]: Pkm.ARMAROUGE
 }
 
 export enum PkmDuo {
@@ -4642,6 +4647,12 @@ export const AnimationConfig: {
   [Pkm.MINUN]: {
     attack: AnimationType.Attack,
     ability: AnimationType.Shock,
+    emote: AnimationType.Shoot
+  }
+  ,
+  [Pkm.ARMAROUGE]: {
+    attack: AnimationType.Attack,
+    ability: AnimationType.Attack,
     emote: AnimationType.Shoot
   }
 }

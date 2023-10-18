@@ -1000,6 +1000,13 @@ export const AbilityName: { [key in Ability]: Langage } = {
     prt: "",
     fra: ""
   }
+  ,
+  [Ability.ARMOR_CANNON]: {
+    eng: "Armor Cannon",
+    esp: "",
+    prt: "",
+    fra: ""
+  }
 }
 
 export const AbilityDescription: { [key in Ability]: Langage } = {
@@ -1998,6 +2005,13 @@ Snow: also gives [5,SP] ${Stat.DEF} / ${Stat.SPE_DEF}`,
   },
   [Ability.LINK_CABLE]: {
     eng: `Dash into a new spot, then triggers an electric arc between Plusle and Minun that deals [50,SP] ${Damage.SPECIAL}. If Plusle or Minun are alone, deals this damage to adjacent enemies instead.`,
+    esp: "",
+    prt: "",
+    fra: ""
+  }
+  ,
+  [Ability.ARMOR_CANNON]: {
+    eng: ` PREUBA XDDDDDDDDDD ectric arc between Plusle and Minun that deals [50,SP] ${Damage.SPECIAL}. If Plusle or Minun are alone, deals this damage to adjacent enemies instead.`,
     esp: "",
     prt: "",
     fra: ""

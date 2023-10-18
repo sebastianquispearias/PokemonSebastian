@@ -164,8 +164,10 @@ import {
   MistBallStrategy,
   LusterPurgeStrategy,
   MudBubbleStrategy,
-  LinkCableStrategy
+  LinkCableStrategy,
+  ArmorCannonStrategy
 } from "../../core/attack-strategy"
+
 
 export enum Ability {
   DEFAULT = "DEFAULT",
@@ -333,7 +335,8 @@ export enum Ability {
   MIST_BALL = "MIST_BALL",
   LUSTER_PURGE = "LUSTER_PURGE",
   MUD_BUBBLE = "MUD_BUBBLE",
-  LINK_CABLE= "LINK_CABLE"
+  LINK_CABLE = "LINK_CABLE",
+  ARMOR_CANNON = "ARMOR_CANNON"
 }
 
 export const AbilityStrategy: { [key in Ability]: AttackStrategy } = {
@@ -502,5 +505,6 @@ export const AbilityStrategy: { [key in Ability]: AttackStrategy } = {
   [Ability.MIST_BALL]: new MistBallStrategy(),
   [Ability.LUSTER_PURGE]: new LusterPurgeStrategy(),
   [Ability.MUD_BUBBLE]: new MudBubbleStrategy(),
-  [Ability.LINK_CABLE]: new LinkCableStrategy()
+  [Ability.LINK_CABLE]: new LinkCableStrategy(),
+  [Ability.ARMOR_CANNON]: new ArmorCannonStrategy()
 }

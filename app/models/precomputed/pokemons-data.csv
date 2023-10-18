@@ -497,6 +497,7 @@ Index,Name,Category,Tier,Additional pick,Type 1,Type 2,Type 3,Type 4,HP,Attack,D
 0890,eternatus,MYTHICAL,2,false,DRAGON,POISON,,,250,30,3,3,3,110,DYNAMAX_CANNON,eternatus,DRAGON,POISON,,,false
 0894,regieleki,MYTHICAL,1,false,ELECTRIC,HUMAN,,,200,20,3,3,2,80,VOLT_SWITCH,regieleki,ELECTRIC,HUMAN,,,false
 0895,regidrago,MYTHICAL,1,false,DRAGON,HUMAN,,,200,20,3,3,2,100,DRACO_ENERGY,regidrago,DRAGON,HUMAN,,,false
+0936,armarouge,EPIC,4,false,FIRE,PSYCHIC,,,240,30,8,8,1,150,ARMOR_CANNON,armarouge,FIRE,PSYCHIC,,,false
 0957,tinkatink,EPIC,1,false,STEEL,FAIRY,,,100,7,3,3,1,150,GIGATON_HAMMER,tinkatink,STEEL,FAIRY,,,false
 0958,tinkatuff,EPIC,2,false,STEEL,FAIRY,,,200,14,4,4,1,150,GIGATON_HAMMER,tinkatink,STEEL,FAIRY,,,false
 0959,tinkaton,EPIC,3,false,STEEL,FAIRY,,,300,30,8,8,1,150,GIGATON_HAMMER,tinkatink,STEEL,FAIRY,,,false

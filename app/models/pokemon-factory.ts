@@ -39,6 +39,7 @@ import {
   Archen,
   Archeops,
   Armaldo,
+  Armarouge,
   Aron,
   Articuno,
   Aurorus,
@@ -592,6 +593,7 @@ import {
 } from "./colyseus-models/pokemon"
 import { IPokemonConfig } from "./mongo-models/user-metadata"
 import PRECOMPUTED_TYPE_POKEMONS from "./precomputed/type-pokemons.json"
+import { Armarouge } from './colyseus-models/pokemon';
 
 export default class PokemonFactory {
   static getNeutralPokemonsByLevelStage(
@@ -1959,6 +1961,8 @@ export default class PokemonFactory {
         return new Plusle(s, e)
       case Pkm.MINUN:
         return new Minun(s, e)
+      case Pkm.ARMAROUGE:
+        return new Armarouge(s, e)  
       case Pkm.DEFAULT:
         return new Magikarp(s, e)
       default:

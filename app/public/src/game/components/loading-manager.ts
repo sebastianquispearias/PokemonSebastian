@@ -481,6 +481,11 @@ export default class LoadingManager {
       "/assets/attacks/LINK_CABLE.json",
       "/assets/attacks"
     )
+    scene.load.multiatlas(
+      "ARMOR_CANNON",
+      "/assets/attacks/ARMOR_CANNON.json",
+      "/assets/attacks"
+    )
   }
 }
 

@@ -218,7 +218,8 @@ export const RareShop = new Array<Pkm>(
   Pkm.BAGON,
   Pkm.HONEDGE,
   Pkm.ABRA,
-  Pkm.GIBLE
+  Pkm.GIBLE,
+  Pkm.ARMAROUGE
 )
 
 export const EpicShop = new Array<Pkm>(
@@ -237,7 +238,8 @@ export const EpicShop = new Array<Pkm>(
   Pkm.OSHAWOTT,
   Pkm.JANGMO_O,
   Pkm.WURMPLE,
-  Pkm.TINKATINK
+  Pkm.TINKATINK,
+  Pkm.ARMAROUGE
 )
 
 export const LegendaryShop = new Array<Pkm>(

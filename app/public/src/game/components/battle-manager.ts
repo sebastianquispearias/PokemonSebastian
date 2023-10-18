@@ -3473,6 +3473,25 @@ export default class BattleManager {
             break
           }
 
+          case Ability.ARMOR_CANNON:
+            coordinates = transformAttackCoordinate(targetX, targetY)
+            specialProjectile = this.scene.add.sprite(
+              coordinates[0],
+              coordinates[1],
+              Ability.ARMOR_CANNON,
+              "000"
+            )
+            specialProjectile.setDepth(7)
+            specialProjectile.setScale(2, 2)
+            specialProjectile.anims.play(Ability.ARMOR_CANNON)
+            specialProjectile.once(
+              Phaser.Animations.Events.ANIMATION_COMPLETE,
+              () => {
+                specialProjectile.destroy()
+              }
+            )
+            break
+
           default:
             break
         }

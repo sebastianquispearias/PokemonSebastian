@@ -2,13 +2,20 @@ import { Orientation } from "../../../../types/enum/Game"
 import { AttackSprite, IPokemon, IPokemonEntity } from "../../../../types"
 
 export const FIREBASE_CONFIG = {
-  apiKey: "AIzaSyCjMpYJycJTjOsXPM1CJn8olntPQhpysOI",
-  authDomain: "pokemonautochess-b18fb.firebaseapp.com",
-  projectId: "pokemonautochess-b18fb",
-  storageBucket: "pokemonautochess-b18fb.appspot.com",
-  messagingSenderId: "448759785030",
-  appId: "1:448759785030:web:bc2f21a25ab9e43a894c47"
+  apiKey: "AIzaSyDm6hreJPzTYPJQQUD_1DOI58MIyVTn0Mg",
+  authDomain: "pokeprojecto-1a2f6.firebaseapp.com",
+  databaseURL: "https://pokeprojecto-1a2f6-default-rtdb.firebaseio.com",
+  projectId: "pokeprojecto-1a2f6",
+  storageBucket: "pokeprojecto-1a2f6.appspot.com",
+  messagingSenderId: "679503330662",
+  appId: "1:679503330662:web:e3d242f695d21cff129ca7",
+  measurementId: "G-YN08CWD6SC"
 }
+
+
+
+
+
 
 export function transformCoordinate(x: number, y: number) {
   if (y === 0) {

@@ -1926,6 +1926,17 @@ export default class AnimationManager {
       duration: 500,
       repeat: 0
     })
+    
+    this.game.anims.create({
+      key: Ability.ARMOR_CANNON,
+      frames: this.game.anims.generateFrameNames(Ability.ARMOR_CANNON, {
+        start: 0,
+        end: 4,
+        zeroPad: 3
+      }),
+      duration: 500,
+      repeat: 0
+    })
   }
 
   animatePokemon(entity: Pokemon, action: PokemonActionState) {

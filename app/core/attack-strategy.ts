@@ -4928,3 +4928,25 @@ export class LinkCableStrategy extends AttackStrategy {
     }, 300)
   }
 }
+
+
+export class ArmorCannonStrategy extends AttackStrategy {
+  process( 
+    pokemon: PokemonEntity,
+    state: PokemonState,
+    board: Board,
+    target: PokemonEntity,
+    crit: boolean
+  ) {
+    super.process(pokemon, state, board, target, crit)
+    let damage = 100
+    if (pokemon.stars === 2) {
+      damage = 200
+    }
+    if (pokemon.stars === 3 || pokemon.rarity === Rarity.MYTHICAL) {
+      damage = 400
+    }
+    pokemon.status.triggerSilence(6000, pokemon, pokemon, board)
+    target.handleSpecialDamage(damage, board, AttackType.SPECIAL, pokemon, crit)
+  }
+}

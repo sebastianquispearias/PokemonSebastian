@@ -535,6 +535,28 @@ export class Steenee extends Pokemon {
   }
 }
 
+export class Armarouge extends Pokemon {
+  constructor(shiny: boolean, emotion: Emotion) {
+    super(
+      Pkm.ARMAROUGE,
+      [Synergy.FIRE, Synergy.PSYCHIC],
+      Rarity.EPIC,
+      Pkm.DEFAULT,
+      240,
+      20,
+      7,
+      7,
+      1,
+      AttackSprite.FIGHTING_MELEE,
+      2,
+      100,
+      Ability.ARMOR_CANNON,
+      shiny,
+      emotion,
+      false,
+    )
+  }
+}
 export class Tsareena extends Pokemon {
   constructor(shiny: boolean, emotion: Emotion) {
     super(
